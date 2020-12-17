@@ -22,7 +22,7 @@ namespace duinocom
 			{
 				string[] portNames = SerialPort.GetPortNames();
 
-				for (int i = portNames.Length-1; i > 0; i--) // Iterate backwards because the port is often at the end.
+				for (int i = portNames.Length-1; i >= 0; i--) // Iterate backwards because the port is often at the end.
 				{
 					var portName = portNames[i];
 
